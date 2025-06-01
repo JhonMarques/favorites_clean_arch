@@ -1,0 +1,6 @@
+Feature: SKU must exist validation
+
+  Scenario: SKU does not exist in client's favorites
+    Given the SKU "SKU-NON-EXISTENT" is not present for client "6651f9e3d42bfe6cb3ed442a"
+    When validating that the SKU exists
+    Then a SkuNotFoundInFavoritesException should be thrown

@@ -7,13 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="wishlist-service" />
+        <module name="luiza-wishlist-service" />
+        <module name="luiza-wishlist" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="wishlist-service" options="-parameters" />
+      <module name="luiza-wishlist" options="-parameters" />
+      <module name="luiza-wishlist-service" options="-parameters" />
     </option>
   </component>
 </project>
